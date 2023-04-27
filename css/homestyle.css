@@ -1,0 +1,123 @@
+/*
+Name: Mai Tran
+Date: February 25, 2023
+Section: CST8285
+Lab number: 304
+File name: stylesheet.css
+Description: This css file is to style some common elements shared accross pages, including body, 
+header, main, footer and so on. 
+*/
+
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+* {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+ }
+ 
+ header {
+    grid-row: 1;
+ }
+
+ main {
+    grid-row: 2;
+ }
+ 
+ footer {
+    grid-row: 3;
+ }
+
+nav , footer {
+    overflow: hidden;
+    background-color: #2196f3;
+    width: 100%;
+}
+
+nav > a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+nav > a:hover {
+    background-color: rgb(44, 106, 168);
+}
+
+nav > a:active {
+    background-color: antiquewhite;
+}
+
+#mainindex {
+    padding: 20px;
+    height: 100%;
+}
+
+.div {
+    border: #f5f5f5;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
+
+#div1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-family: 'Montserrat';   
+    margin-bottom: 10px; 
+}
+
+div#div1 > h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+img {
+    border: 1px none; 
+    border-radius: 4px;
+    cursor: pointer;  
+    padding: 10px; 
+    width: 150px;
+    margin: 5px;
+    float: left;
+}
+
+p.bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    text-align: right;
+    font-size: larger;
+    padding-right: 10px;
+}
+
+footer > p.contact {
+    text-decoration: none;
+    margin: 3px;
+    padding: 3px;
+    text-align: left;
+    font-size: 10pt;
+}

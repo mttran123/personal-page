@@ -1,0 +1,143 @@
+/*
+Name: Mai Tran
+Date: February 25, 2023
+Section: CST8285
+Lab number: 304
+File name: coursestyle.css
+Description: This style sheet is mainly to style the Courses page of the website
+*/
+
+h1 {
+  padding: 10px 20px 20px 20px;
+}
+
+.level {
+  background-color: #2196f3;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container>div.head1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: medium;
+  grid-column: 1 / 1;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.grid-container>div.head2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-column: 2 / 8;
+  text-align: center;
+}
+
+div.head2>p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.grid-container>div.code {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: medium;
+  grid-column: 1 / 1;
+  font-family: sans-serif;
+  font-weight: bold;
+  
+}
+
+p.name {
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-column: 2/8;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.grid-container>div.description {
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-column: 2 / 8;
+  font-family: sans-serif;
+}
+
+
+#search {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding: 20px;
+}
+
+div>input#search-input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+}
+
+div>button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: #f1f1f1;
+  text-decoration: none;
+}
+
+div>button:hover {
+  background-color: #64b8f7;
+  color: #211919;
+}
+
+#sort {
+  font-size: large;
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 20px 20px 10px 20px;
+}
+
+#filter {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+}
+
+#filter>button {
+  margin: 10px;
+}
+
+#ul-sort {
+  padding: 0%;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}

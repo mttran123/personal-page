@@ -1,0 +1,52 @@
+/*
+Name: Mai Tran
+Date: February 25, 2023
+Section: CST8285
+Lab number: 304
+File name: resumestyle.css
+Description: This style sheet is mainly to style the Resume page on website
+*/
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.collapsible {
+    background-color: #349977;
+    color: #f1f5f7;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: large;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.collapsible:hover {
+    background-color: #16a274;
+}
+
+.content {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.content> button {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: bolder;
+}

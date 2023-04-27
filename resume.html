@@ -1,0 +1,119 @@
+<!-- 
+Name: Mai Tran
+Date: February 25, 2023
+Section: CST8285
+Lab number: 304
+File name: resume.html
+Description: This file is to build a resume page with different collapsible sections including my programming skills, 
+experience and previous projects
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my resume with programming skills and lab projects">
+    <meta name="author" content="Mai Tran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+    <link rel="stylesheet" type="text/css" href="css/resumestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="course.html">Courses</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Mai Tran</h1>
+        <button type="button" class="collapsible" id="collapse-button-1">Objective</button>
+        <div class="content" id="collapse-content-1">
+            <p>To use my excellent technical skills in a position as a software developer</p>
+        </div>
+        <button type="button" class="collapsible" id="collapse-button-2">Technical Skills and Abilities</button>
+        <div class="content" id="collapse-content-2">
+            <button type="button">Programming Languages</button>
+            <ul>
+                <li>Java, Python, JavaScript, HTML, CSS</li>
+            </ul>
+            <button type="button">TECHNICAL ENVIRONMENT</button>
+            <ul>
+                <li>XCode, iOS Frameworks, J2EE, jQuery, Object Oriented Javascript, Amazon Web Services</li>
+            </ul>
+            <button type="button">Web Services</button>
+            <ul>
+                <li>J2EE, XML, HTTP</li>
+            </ul>
+            <button type="button">Operating Systems</button>
+            <ul>
+                <li>Unix (Ubuntu, Linux), Windows</li>
+            </ul>
+            <button type="button">Employable Skills</button>
+            <ul>
+                <li>Problem-solving and time management skills</li>
+                <li>Written and communication skills</li>
+            </ul>
+        </div>
+        <button type="button" class="collapsible" id="collapse-button-3">Related Experience</button>
+        <div class="content" id="collapse-content-3">
+            <button type="button">Technical Support | ABC Company | 2015-2020</button>
+            <ul>
+                <li>Develop and test software</li>
+                <li>Identify and resolve any technical issues arising</li>
+                <li>Create detailed design documentation</li>
+                <li>Write well-designed testable code</li>
+            </ul>
+        </div>
+        <button type="button" class="collapsible" id="collapse-button-4">Education</button>
+        <div class="content" id="collapse-content-4">
+            <button type="button">Diploma | 2020-now | Algonquin College</button>
+            <ul>
+                <li>Major: Computer Programming</li>
+            </ul>
+
+            <button type="button">Bachelor | 20xx-20xx | University of ABC</button>
+            <ul>
+                <li>Major: Business and Finance</li>
+            </ul>
+        </div>
+        <button type="button" class="collapsible" id="collapse-button-5">LAB PROJECTS</button>
+        <div class="content" id="collapse-content-5">
+            <button type="button">Note app project</button>
+            <p><img src="images/noteapp.png" alt="note app">A Note app with different options: adding new note, autosave new note, 
+                edit existing notes. Check it out <a href="https://github.com/mttran123/Notes" target="new">here</a></p>
+            <button type="button">Alert demo</button>
+            <p><img src="images/alert.png" alt="alert app">Create an alert in an app by using AlertDialog.Builder, customize alert title, message, icon. 
+                Check it out <a href="https://github.com/mttran123/AlertDemo" target="new">here</a> </p>
+        </div>
+    </main>
+    <footer>
+        <p class="bottom"><a href="#top">Top of the page</a></p>
+        <p class="contact">Email: <a href="mailto:tran0441@algonquinlive.com">tran0441@algonquinlive.com</a></p>
+        <p class="contact">Follow me on <i class="fa fa-github"></i><a 
+            href="https://github.com/mttran123?tab=repositories" target="new">Github</a></p>
+        <p class="contact">&copy; 2023</p>
+    </footer>
+
+    <script>
+        var buttons = document.getElementsByClassName("collapsible");
+
+        for (var i = 0; i < buttons.length; i++) {
+            const content = document.getElementById(`collapse-content-${i + 1}`);
+            buttons[i].addEventListener("click", function () {
+                if (content.style.display === "none") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

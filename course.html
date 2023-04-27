@@ -1,0 +1,168 @@
+<!-- 
+Name: Mai Tran
+Date: February 25, 2023
+Section: CST8285
+Lab number: 304
+File name: course.html
+Description: This html file is to list all courses I have been completing so far, including course name, code 
+and brief description
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="completed courses in level 1 and 2">
+    <meta name="author" content="Mai Tran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+    <link rel="stylesheet" type="text/css" href="css/coursestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="features.js" defer></script>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="course.html">Courses</a>
+        </nav>
+    </header>
+    <main>
+        <div id="search">
+            <input type="text" placeholder="Search..." id="search-input" name="search">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="filter">
+            <button type="button" id="all">Show all</button>
+            <button type="button" id="level-1"> Level 1</button>
+            <button type="button" id="level-2"> Level 2</button>
+        </div>
+        <div id="sort">
+            <label for="sel-sort">Sort by level</label>
+            <select id="sel-sort">
+                <option>Ascending</option>
+                <option>Descending</option>
+            </select>
+        </div>
+        <h1>Courses</h1>
+        <ul id="ul-sort">
+            <li>
+                <button type="button" class="level">Level 1</button>
+                <div class="grid-container" id="filterable-content-1">
+                    <div class="head1">Course Code</div>
+                    <div class="head2"><p>Course Name &amp; Description</p></div>
+                    <div class="code">CST8101</div>
+                    <div class="description">
+                        <p class="name">Computer Essentials</p>
+                        <p><img src="images/CompEss.PNG" alt="Computer Essentials">The course equips students with some
+                            computer essentials, such as software, hardware, and learn to configure your laptop
+                            environment.
+                            Students learn to create backups, install virus protection, and manage files through a
+                            basic understanding of the Windows Operating System. </p>
+                    </div>
+                    <div class="code">CST8116</div>
+                    <div class="description">
+                        <p class="name">Introduction to Programming</p>
+                        <p><img src="images/Java.PNG" alt="Computer Essentials">The course introduces some foundation
+                            concepts of Java programming language, including structures, variables, methods,
+                            classes, arrays,
+                            coding conventions and documentation. </p>
+                    </div>
+                    <div class="code">CST8215</div>
+                    <div class="description">
+                        <p class="name">Introduction to Database</p>
+                        <p><img src="images/database.PNG" alt="Computer Essentials">The course introduces fundamentals of
+                            relational databases design using Entity Relation Diagrams (ERDs),
+                            and use Structured Query Language (SQL) to create, modify and query a database.</p>
+                    </div>
+                    <div class="code">MAT8001C</div>
+                    <div class="description">
+                        <p class="name">Technical Mathematics for Computer Science</p>
+                        <p><img src="images/math.PNG" alt="Math for Computer Science">Students are introduced computer
+                            number systems in addition to Boolean algebra and logic to help
+                            solve problems involving computer systems. Students also study the addition and
+                            subtraction of vectors using vector components. </p>
+                    </div>
+                    <div class="code">ENL1813T</div>
+                    <div class="description">
+                        <p class="name">Communications</p>
+                        <p><img src="images/communication.PNG" alt="Communication">Students practise writing, speaking,
+                            reading, listening, locating and documenting information and using technology to
+                            communicate professionally through a combination of lectures, exercises, and independent
+                            learning.</p>
+                    </div>
+                    <div class="code">CST8300</div>
+                    <div class="description">
+                        <p class="name">Achieving Success in Changing Environments</p>
+                        <p><img src="images/success.PNG" alt="Achieving Success">Students apply their critical thinking,
+                            decision-making skills to help resolve variety of issues in current society.</p>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <button type="button" class="level">Level 2</button>
+                <div class="grid-container" id="filterable-content-2">
+                    <div class="head1">Course Code</div>
+                    <div class="head2"><p>Course Name &amp; Description</p></div>
+                    <div class="code">CST2355</div>
+                    <div class="description">
+                        <p class="name">Database System</p>
+                        <p><img src="images/databaseSystem.PNG" alt="Database System book cover">Students acquire practical
+                            experience using market-leading object-relational database management systems like
+                            Oracle and MySQL.</p>
+                    </div>
+                    <div class="code">CST8102</div>
+                    <div class="description">
+                        <p class="name">Operating System Fundamentals (GNU/Linux)</p>
+                        <p><img src="images/Linux.PNG" alt="Operating System Fundamentals">Students explore basic concepts
+                            of operating systems, learn how to use command lines based on the GNU/Linux operating
+                            system</p>
+                    </div>
+                    <div class="code">CST8284</div>
+                    <div class="description">
+                        <p class="name">Object Oriented Programming (Java)</p>
+                        <p><img src="images/java2.PNG" alt="Object Oriented Programming (Java)">Students get deep insight
+                            into object-oriented programming like Java, explore further into object-oriented
+                            concepts.</p>
+                    </div>
+                    <div class="code">CST8285</div>
+                    <div class="description">
+                        <p class="name">Web Programming</p>
+                        <p><img src="images/databaseSystem.PNG" alt="Web Programming book">Students develop basic skills of
+                            web programming, website design and implementation; apply different languages like
+                            JavaScript, HTML5, and PHP
+                            to develop and design interactive websites.</p>
+                    </div>
+                    <div class="code">ENL2019T</div>
+                    <div class="description">
+                        <p class="name">Technical Communication for Engineering Technologies</p>
+                        <p><img src="images/technicalwriting.PNG" alt="Communication textbook">Students are offered
+                            different types of exercises and assignments to apply independent and critical thinking,
+                            research skill, writing and presentation in technical topics</p>
+                    </div>
+                    <div class="code">GEP1001</div>
+                    <div class="description">
+                        <p class="name">Cooperative Education Readiness</p>
+                        <p><img src="images/coop.PNG" alt="Coop Education">Students will receive guidelines on how to prepare
+                            for coop
+                            job search, resume, interviews and how to succeed in the workplace </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p class="bottom"><a href="#top">Top of the page</a></p>
+        <p class="contact">Email: <a href="mailto:tran0441@algonquinlive.com">tran0441@algonquinlive.com</a></p>
+        <p class="contact">Follow me on <i class="fa fa-github"></i><a
+                href="https://github.com/mttran123?tab=repositories" target="new">Github</a></p>
+        <p class="contact">&copy; 2023</p>
+    </footer>
+</body>
+
+</html>
